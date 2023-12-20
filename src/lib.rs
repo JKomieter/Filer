@@ -41,41 +41,41 @@ mod tests {
         assert_eq!(config.filename, "test");
     }
 
-    // #[test]
-    // fn test_create_file_cmd() {
-    //     let filename = "test";
+    #[test]
+    fn test_create_file_cmd() {
+        let filename = "test";
 
-    //     let result = file_handlers::create_file(&filename);
+        let result = file_handlers::create_file(&filename);
 
-    //     assert_eq!(result.is_ok(), true);
-    // }
+        assert_eq!(result.is_ok(), true);
+    }
 
-    // #[test]
-    // fn test_delete_file_cmd() {
-    //     let filename = "test";
+    #[test]
+    fn test_delete_file_cmd() {
+        let filename = "test";
 
-    //     let result = file_handlers::delete_file(&filename);
+        let result = file_handlers::delete_file(&filename);
 
-    //     assert_eq!(result.is_ok(), true);
-    // }
+        assert_eq!(result.is_ok(), true);
+    }
 
-    // #[test]
-    // fn test_cmp_file_cmd() {
-    //     let filename = "test";
+    #[test]
+    fn test_cmp_file_cmd() {
+        let filename = "test";
 
-    //     let result = file_handlers::compare_versions(&filename);
+        let result = file_handlers::compare_versions(&filename);
 
-    //     assert_eq!(result.is_ok(), true);
-    // }
+        assert_eq!(result.is_ok(), true);
+    }
 
-    // #[test]
-    // fn test_create_file_version_cmd() {
-    //     let filename = "test";
+    #[test]
+    fn test_create_file_version_cmd() {
+        let filename = "test";
 
-    //     let result = file_handlers::create_file_version(&filename);
+        let result = file_handlers::create_file_version(&filename);
 
-    //     assert_eq!(result.is_ok(), true);
-    // }
+        assert_eq!(result.is_ok(), true);
+    }
 
     #[test]
     fn test_read_file_contents() {
